@@ -1,4 +1,3 @@
 intrix_frontend:
-    resource: "@IntrixFrontendBundle/Controller/"
-    type:     annotation
+    resource: "@IntrixFrontendBundle/Resources/config/routing.yml"
     prefix:   /

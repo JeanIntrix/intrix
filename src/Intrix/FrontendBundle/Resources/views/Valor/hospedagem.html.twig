@@ -1,0 +1,105 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'valor' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a alt="Homepage Intrix" href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                        <li><a alt="Valores Intrix" href="{{path('intrix_frontend_valor')}}">Valores</a> <span class="divider">/</span></li>
+                        <li class="active">Hospedagem</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Hospedagem</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2><strong>Intrix</strong> a melhor opção.</h2>
+
+        <div class="row">
+            <div class="span12">
+                <p class="lead">
+                    Contamos com diversas opções para atender de forma completa a sua necessidade. Confira abaixo e escolha a opção que atende melhor o seu negócio.
+                </p>
+            </div>
+        </div>
+
+        <hr class="tall" />
+
+        <h3 class="short">Escolha o melhor <strong>plano</strong> para você.</h3>
+        <p>Disponibilizamos 4 planos para melhor lhe atender.</p>
+
+        <div class="row">
+
+            <div class="pricing-table">
+                <div class="span3">
+                    <div class="plan most-popular">
+                        <div class="plan-ribbon-wrapper"><div class="plan-ribbon">Econômico</div></div>
+                        <h3>Simples<span>R$ 29,90</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>1 Site</li>
+                            <li>3 Bancos de dados</li>
+                            <li>Dominios, transferências e espaço em disco ilimitados</li>
+                            <li>3 contas de E-mail</li>
+                            <li>1 Ano de dominío grátis</li>
+                            <li>Criador de sites 2.0</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span3 center">
+                    <div class="plan">
+                        <h3>Básico<span>R$ 39,90</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>2 Sites</li>
+                            <li>6 Bancos de dados</li>
+                            <li>Dominios, transferências e espaço em disco ilimitados</li>
+                            <li>25 contas de E-mail</li>
+                            <li>1 Ano de dominío grátis</li>
+                            <li>Criador de sites 2.0</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="plan">
+                        <h3>Ideal<span>R$ 49,90</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>5 Sites</li>
+                            <li>15 Bancos de dados</li>
+                            <li>Dominios, transferências e espaço em disco ilimitados</li>
+                            <li>50 contas de E-mail</li>
+                            <li>1 Ano de dominío grátis</li>
+                            <li>Criador de sites 2.0</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="plan">
+                        <h3>Master<span>R$ 59,90</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>10 Sites</li>
+                            <li>30 Bancos de dados</li>
+                            <li>Dominios, transferências e espaço em disco ilimitados</li>
+                            <li>100 contas de E-mail</li>
+                            <li>1 Ano de dominío grátis</li>
+                            <li>Criador de sites 2.0</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{%endblock%}

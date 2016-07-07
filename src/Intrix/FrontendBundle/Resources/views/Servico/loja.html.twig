@@ -1,0 +1,66 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'servico' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a alt="Homepage Intrix" href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                        <li><a alt="Serviços Intrix" href="{{path('intrix_frontend_servico')}}">Serviço</a> <span class="divider">/</span></li>
+                        <li class="active">Loja Online</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Loja Online</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="span3">
+                {% include 'IntrixFrontendBundle:Servico:_leftbar.html.twig' with {'loja' : ''} %}
+            </div>
+            <div class="span9">
+                <h2>Entenda porque ter uma loja online!</h2>
+                <img class="responsive appear-animation pull-left" src="{{ asset('bundles/intrixfrontend/img/intrix.png')}}" data-appear-animation="fadeInUpBig">
+                <p>
+                    Loja virtual é um site de vendas na qual são oferecidos serviços ou produtos. Os clientes que acessarem site poderão visualizar uma vitrine
+                    de produtos, que será separada por categorias ou não. Estas categorias poderão conter produtos ou serviços que os clientes colocarão em
+                    carrinhos de compras para realizar a compra.
+                </p>
+                <p>
+                    A cada dia o número de pessoas conectadas a internet aumenta, assim como o período de tempo que estas pessoas ficam na frente de seus
+                    computadores. Os consumidores estão preferindo comprar pela internet a ir pessoalmente às lojas físicas por ser mais prático e fácil.
+                    Nos próximos anos, o vendedor que não começar a disponibilizar seus produtos de forma online infelizmente não conseguirá sobreviver no
+                    nicho de mercado. A internet não mais é exclusiva das camadas mais ricas da sociedade. Hoje em dia é mais fácil ter um computador em casa
+                    do que um televisor, consequência da enorme inclusão digital que o governo está promovendo. Segue abaixo algumas vantagens de se ter uma loja
+                    virtual:
+                    <ul>
+                        <li>Seus produtos anunciados 24 horas por dia e 7 dias por semana.</li>
+                        <li>Não serão necessários gastos com estabelecimento, infra-estrutura, vendedores e etc.</li>
+                        <li>Facilidade de compra para o cliente, basta clicar e comprar.</li>
+                        <li>Fortalecimento de sua marca e expansão de mercado.</li>
+                        <li>De uma forma rápida e fácil seus clientes conseguirão visualizar todos os seus produtos juntamente com suas descrições.</li>
+                        <li>Os custos para iniciar uma loja virtual são mínimos em comparação a iniciar uma loja física.</li>
+                    </ul>
+                </p>
+                <p>
+                    Confie na <strong>Intrix</strong> para ajudar a alcançar os melhores resultados que sua loja precisa.
+                </p>
+                <p>
+                    <a alt="Preços Desenvolvimento de site" href="{{path('intrix_frontend_valor_site')}}" class="btn btn-large btn-primary">Solicite o seu orçamento</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+{%endblock%}

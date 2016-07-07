@@ -1,0 +1,82 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'sobre' : ''} %}
+{%endblock%}
+
+{% block body %}
+    <div id="content" class="content full">
+        <section class="page-top">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <ul class="breadcrumb">
+                            <li><a href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                            <li class="active">Sobre nós</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <h2>Sobre nós</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h3><strong>Quem Somos</strong></h3>
+                    <p>
+                        A <a href="http://www.intrix.com.br" alt='Intrix'>Intrix</a> foi fundada em 2012 na cidade de Araucária, região metropolitana de Curitiba. O nosso crescimento é fruto de uma ótima relação
+                        que temos com nossos clientes e pela evolução continua que conquistamos através de cada projeto realizado.
+                    </p>
+
+                    <p>
+                        Com 2 Anos de idade e contando com profissionais com mais de 7 anos de experiência e com vários projetos de sucesso a 
+                        <a href="http://www.intrix.com.br" alt='Intrix'>Intrix</a> entra em uma nova fase. Essa fase visa se consolidar como uma grande empresa
+                        de desenvolvimento de software.
+                    </p>
+                    <p> 
+                        Nossa equipe é constituída por pessoas que amam o que fazem, que procuram melhorar a cada dia visando aumentar ainda mais a qualidade
+                        do serviço prestado. Trataremos o seu projeto como se fosse nosso, assim garantimos um ótimo produto.
+                    </p>
+                    <br />
+                    <h3><strong>Missão</strong></h3>
+                    <p>
+                        Desenvolver Sistemas, websites, lojas online e realizar manutenção em sistemas legado com eficiência, confiábilidade, segurança e garantir
+                        o seu funcionamento por meio de um suporte acima das expectativas de forma especializada. Seguir uma filosofia de conduta que agregue valor
+                        aos nossos clientes, parceiros e colaboradores.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <hr class="tall">
+
+            <h2>A nova maneira de <strong>Sucesso</strong></h2>
+
+            <div class="row">
+                <div class="span10">
+                    <p class="lead">
+                        Em um mundo globalizado, ter um site na internet não é mais um luxo para poucos, e sim uma regra geral para empresas que querem sobreviver
+                        em um mercado cada vez mais agressivo.<br /><br />
+                        Ter uma página na internet se tornou indispensável para empresas de todos os tamanhos: grande, médio ou pequeno porte. Esta ferramenta
+                        possibilita comunicação junto ao seu cliente sobre os seus produtos e serviços, apresentando seus diferenciais. Mas não basta ter um site
+                        "bonitinho" e esperar que chova clientes! Pelo contrário, ter um site na internet é apenas o primeiro passo para a empresa que está
+                        "engatinhando" no mundo virtual, é o começo de muito trabalho para que essa ferramenta seja utilizada de forma inteligente, que possa
+                        corresponder positivamente ao tempo e dinheiro investidos.
+                    </p>
+                </div>
+                <div class="span2">
+                    <a href="#" class="btn btn-large btn-primary pull-top">Trabalhe conosco!</a>
+                </div>
+            </div>
+
+            <hr class="tall">
+
+        </div>
+    </div>
+{% endblock %}

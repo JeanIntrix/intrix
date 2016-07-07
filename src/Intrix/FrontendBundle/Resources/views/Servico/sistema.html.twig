@@ -1,0 +1,60 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'servico' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a alt="Homepage Intrix" href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                        <li><a alt="Serviços Intrix" href="{{path('intrix_frontend_servico')}}">Serviço</a> <span class="divider">/</span></li>
+                        <li class="active">Sistemas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Sistemas</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="span3">
+                {% include 'IntrixFrontendBundle:Servico:_leftbar.html.twig' with {'sistema' : ''} %}
+            </div>
+            <div class="span9">
+                <h2>A forma mais <strong>eficiente</strong> de gerenciar sua empresa</h2>
+                <img class="responsive appear-animation pull-left" src="{{ asset('bundles/intrixfrontend/img/intrix.png')}}" data-appear-animation="fadeInUpBig">
+                <p>
+                    Sabemos que um dos itens fundamentais para o sucesso de uma empresa é a organização, e o meio mais eficiente para conseguir, é um sistema de gestão.
+                </p>
+                <p>
+                    Com ele sua empresa poderá centralizar informações, organizar tarefas e atividades, acompanha pedidos, monitoria matéria prima e estoque, enfim,
+                    com um sistema de gestão sua empresa ficará melhor administrada.
+                </p>
+                <p>
+                    O diferencial da <strong>Intrix</strong> é que fazemos um sistema totalmente customizado, de acordo com a sua necessidade. Chega de contar com
+                    mil funcionalidades das quais você não utilizará.
+                </p>
+                <p>
+                    Fazemos a analise da sua necessidade e assim criamos o sistema que seja ideal para
+                    seu negocio.
+                </p>
+                <p>
+                    Confie na <strong>Intrix</strong> para ajudar a alcançar os melhores resultados que sua empresa precisa.
+                </p>
+                <p>
+                    <a alt="Preços Desenvolvimento de site" href="{{path('intrix_frontend_valor_site')}}" class="btn btn-large btn-primary">Solicite o seu orçamento</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+{%endblock%}

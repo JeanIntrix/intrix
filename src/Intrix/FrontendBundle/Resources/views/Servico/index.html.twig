@@ -1,0 +1,115 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'servico' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                        <li class="active">Serviços</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Serviços</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <h2>Nossos Serviços</h2>
+
+        <div class="row">
+            <div class="span10">
+                <p class="lead">
+                    A <strong>Intrix</strong> conta com uma grande diversidade de serviços para atender de forma completa o nosso público.
+                    Sempre buscando excelência nos trabalhos realizados para ver a evolução continua dos nossos clientes.<br /><br />
+                    O Mundo está procurando a sua empresa, deixe a <strong>Intrix</strong> ajudar o mundo a achar o seu negócio. Isso que nós satisfaz,
+                    ver o crescimento dos clientes graças aos nossos serviços.
+                    <br /><br />
+                    Contamos com a lista de serviços que você pode consultar abaixo.
+                </p>
+            </div>
+            <div class="span2">
+                <a href="#" class="btn btn-large btn-primary pull-top pull-right">Entre em contato!</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row featured-boxes">
+            <div class="span3">
+                <div class="featured-box featured-box-primary">
+                    <div class="box-content">
+                        <i class="icon icon-desktop"></i>
+                        <h4>Sites</h4>
+                        <p>Desenvolvemos seu site.<a alt="Desenvolvimento de site" href="{{path('intrix_frontend_servico_site')}}" class="learn-more">Leia Mais <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="featured-box featured-box-secundary">
+                    <div class="box-content">
+                        <i class="icon icon-cogs"></i>
+                        <h4>Sistemas</h4>
+                        <p>Fazemos sistemas sobre demanda, atendendo a sua necessidade<a href="/" class="learn-more">Leia Mais <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="featured-box featured-box-tertiary">
+                    <div class="box-content">
+                        <i class="icon icon-thumbs-up"></i>
+                        <h4>Aluguel de site</h4>
+                        <p>Contamos com esse serviço para empresas que querem ter um site sem gastar muito.<a href="/" class="learn-more">Leia Mais <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="featured-box featured-box-quaternary">
+                    <div class="box-content">
+                        <i class="icon icon-bug"></i>
+                        <h4>Manutenção em sites/sistemas</h4>
+                        <p>Corrigimos, criamos novas funcionalidade para seu site ou sistema. <a href="/" class="learn-more">Leia Mais <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row featured-boxes">
+            <div class="span3">
+                <div class="featured-box featured-box-quinto">
+                    <div class="box-content">
+                        <i class="icon icon-cloud-upload"></i>
+                        <h4>Hospedagem</h4>
+                        <p>Contamos com um serviço profissional de hospedagem.<a href="/" class="learn-more">Leia Mais <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="featured-box featured-box-sexto">
+                    <div class="box-content">
+                        <i class="icon icon-shopping-cart"></i>
+                        <h4>Loja Online</h4>
+                        <p>Coloque sua loja aberta 24h na internet.<a href="/" class="learn-more">Leia Mais <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="span3">
+                <div class="featured-box featured-box-oitavo">
+                    <div class="box-content">
+                        <i class="icon icon-google-plus"></i>
+                        <h4>Seo</h4>
+                        <p>Faça sua página na internet aparecer nos primeiros lugares do google. <a href="/" class="learn-more">Leia Mais <i class="icon-angle-right"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{%endblock%}

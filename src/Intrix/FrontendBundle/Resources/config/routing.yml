@@ -1,0 +1,75 @@
+intrix_frontend_homepage:
+    path:     /
+    defaults: { _controller: IntrixFrontendBundle:Home:index }
+
+intrix_frontend_sobre:
+    path:     /sobre
+    defaults: { _controller: IntrixFrontendBundle:Sobre:index }
+
+intrix_frontend_servico:
+    path:     /servico
+    defaults: { _controller: IntrixFrontendBundle:Servico:index }
+    
+intrix_frontend_servico_site:
+    path:     /servico/site
+    defaults: { _controller: IntrixFrontendBundle:Servico:site }
+
+intrix_frontend_servico_sistema:
+    path:     /servico/sistema
+    defaults: { _controller: IntrixFrontendBundle:Servico:sistema }
+    
+intrix_frontend_servico_aluguel:
+    path:     /servico/aluguel-de-site
+    defaults: { _controller: IntrixFrontendBundle:Servico:aluguel }
+
+intrix_frontend_servico_manutencao:
+    path:     /servico/manutencao-em-sites-sistemas
+    defaults: { _controller: IntrixFrontendBundle:Servico:manutencao }
+    
+intrix_frontend_servico_hospedagem:
+    path:     /servico/hospedagem
+    defaults: { _controller: IntrixFrontendBundle:Servico:hospedagem }
+
+intrix_frontend_servico_loja:
+    path:     /servico/loja-online
+    defaults: { _controller: IntrixFrontendBundle:Servico:loja }
+
+intrix_frontend_servico_seo:
+    path:     /servico/seo
+    defaults: { _controller: IntrixFrontendBundle:Servico:seo }
+
+intrix_frontend_valor:
+    path:     /valor
+    defaults: { _controller: IntrixFrontendBundle:Valor:index }
+    
+intrix_frontend_valor_site:
+    path:     /valor/site
+    defaults: { _controller: IntrixFrontendBundle:Valor:site }
+
+intrix_frontend_valor_sistema:
+    path:     /valor/sistema
+    defaults: { _controller: IntrixFrontendBundle:Valor:sistema }
+    
+intrix_frontend_valor_aluguel:
+    path:     /valor/aluguel-de-site
+    defaults: { _controller: IntrixFrontendBundle:Valor:aluguel }
+
+intrix_frontend_valor_manutencao:
+    path:     /valor/manutencao-em-sites-sistemas
+    defaults: { _controller: IntrixFrontendBundle:Valor:manutencao }
+    
+intrix_frontend_valor_hospedagem:
+    path:     /valor/hospedagem
+    defaults: { _controller: IntrixFrontendBundle:Valor:hospedagem }
+
+intrix_frontend_valor_loja:
+    path:     /valor/loja-online
+    defaults: { _controller: IntrixFrontendBundle:Valor:loja }
+
+intrix_frontend_valor_seo:
+    path:     /valor/seo
+    defaults: { _controller: IntrixFrontendBundle:Valor:seo }
+
+intrix_frontend_contato:
+    path:     /contato
+    defaults: { _controller: IntrixFrontendBundle:Contato:index }

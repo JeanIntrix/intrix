@@ -1,0 +1,226 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'home' : ''} %}
+{%endblock%}
+{% block body %}
+    <div id="content" class="content full">
+
+        {{ render(controller('IntrixFrontendBundle:Home:banner')) }}
+
+        <div class="home-intro">
+            <div class="container">
+
+                <div class="row">
+                    <div class="span8">
+                        <p>
+                            A maneira mais eficiente de aparecer na <em>Internet.</em>
+                            <span>Veja as opções que preparamos para você.</span>
+                        </p>
+                    </div>
+                    <div class="span4">
+                        <div class="get-started">
+                            <a href="{{path('intrix_frontend_contato')}}" class="btn btn-large btn-primary">Contrate agora!</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row center">
+                <div class="span12">
+                    <h2 class="short">A <strong class="inverted">Intrix</strong>está revolucionando a forma de fazer sites e sistemas.</h2>
+                    <p class="featured lead">
+                        Estamos atendendo as mais diversas necessidades, desde site complexos a sites simples. Assim tentamos desmistificar o conceito que site custa caro. Nós trabalhamos assim:
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-concept">
+            <div class="container">
+
+                <div class="row center">
+                    <span class="sun"></span>
+                    <span class="cloud"></span>
+                    <div class="span2 offset1">
+                        <div class="process-image" data-appear-animation="bounceIn">
+                            <img src="{{asset('bundles/intrixfrontend/img/home-concept-item-1.png')}}" alt="" />
+                            <strong>Estratégia</strong>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="200">
+                            <img src="{{asset('bundles/intrixfrontend/img/home-concept-item-2.png')}}" alt="" />
+                            <strong>Planejamento</strong>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="process-image" data-appear-animation="bounceIn" data-appear-animation-delay="400">
+                            <img src="{{asset('bundles/intrixfrontend/img/home-concept-item-3.png')}}" alt="" />
+                            <strong>Desenvolvimento</strong>
+                        </div>
+                    </div>
+                    <div class="span4 offset1">
+                        <div class="project-image">
+                            <div id="fcSlideshow" class="fc-slideshow">
+                                <ul class="fc-slides">
+                                    <li><a href="http://intrix.com.br" target="_blank"><img src="{{asset('bundles/intrixfrontend/img/projects/intrix.png')}}" /></a></li>
+                                    <li><a href="http://socarrao.com.br" target="_blank"><img src="{{asset('bundles/intrixfrontend/img/projects/socarrao.png')}}" /></a></li>
+                                    <li><a href="http://joox.com.br" target="_blank"><img src="{{asset('bundles/intrixfrontend/img/projects/joox.png')}}" /></a></li>
+                                </ul>
+                            </div>
+                            <strong class="our-work">Nosso trabalho</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="tall" />
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="span8">
+                    <h2>O que <strong>Fazemos</strong></h2>
+                    <div class="row">
+                        <div class="span4">
+                            <div class="feature-box">
+                                <div class="feature-box-icon">
+                                    <i class="icon-group"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="shorter">Sites</h4>
+                                    <p class="tall">Desenvolvemos o seu site de forma personalizada, assim você pode escolher a cara do seu site.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-box-icon">
+                                    <i class="icon-file"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="shorter">Sistemas</h4>
+                                    <p class="tall">
+                                        Fazemos o sistema de acordo com a sua necessidade, chega de sistemas cheio de funcionalidades
+                                        das quais você não usa.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-box-icon">
+                                    <i class="icon-google-plus"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="shorter">Aluguel de site</h4>
+                                    <p class="tall">Contamos com layouts pré definidos para atender a sua necessidade de aparecer na internet de forma rápido e barata.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-box-icon">
+                                    <i class="icon-adjust"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="shorter">Manutenção em sites/sistemas</h4>
+                                    <p class="tall">
+                                        Caso deseje acrescentar ou remover alguma funcionalidade ou corrigir
+                                        algum bug? Contrate a <strong>Intrix</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="feature-box">
+                                <div class="feature-box-icon">
+                                    <i class="icon-film"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="shorter">Hospedagem</h4>
+                                    <p class="tall">
+                                        Somos parceiros da <a href="http://www.locaweb.com.br" title="Locaweb"> Locaweb</a> uma das maiores empresas de hospedagem do Brasil,
+                                        Com a maior infraestrutura e suporte.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-box-icon">
+                                    <i class="icon-ok"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="shorter">Loja Online</h4>
+                                    <p class="tall">
+                                        Quer abrir um negócio na internet? Escolha a <strong>Intrix</strong> para colocar esse projeto no ar.
+                                        Contamos com os frameworks <a href="http://magento.com/" title="Magento"> Magento</a>, <a href="http://www.prestashop.com/pt/" title="PrestaShop"> PrestaShop</a> e <a href="http://www.drupal.org.br/" title="Drupal"> Drupal</a> todos para atender a sua necessidade.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-box-icon">
+                                    <i class="icon-desktop"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="shorter">SEO</h4>
+                                    <p class="tall">
+                                        SEO - Search-Engine optimization consiste em um esforço contínuo
+                                        para colocar o site ou e-commerce entre as primeiras posições do Google.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+                    <h2>Como fazemos...</h2>
+                    <div class="accordion" id="accordion">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><i class="icon-lightbulb"></i> Tecnologia</a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse in">
+                                <div class="accordion-inner">
+                                    Desenvolvemos nossos produtos com tecnologia de ponta, usando as ferramentas mais modernas para garantir um
+                                    produto final de qualidade.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="icon-laptop"></i> Experiência</a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    Contamos com profissionais com mais de 7 anos de experiência, que já vivenciaram diversos projetos. Assim aumentamos ainda mais a chances de sucesso do seu 
+                                    negócio com nossos serviços.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><i class="icon-bell-alt"></i> Pontualidade</a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    Trabalhamos com recompensa em metas, assim garantimos uma equipe empenhanda em conseguir entregar os projetos no tempo prometido. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><i class="icon-ok"></i> Preço</a>
+                            </div>
+                            <div id="collapseFour" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    Viemos com a proposta de desmistificar a ideia de que site/sistema custa caro. Contamos com projetos diferenciados para melhor atendê-lo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

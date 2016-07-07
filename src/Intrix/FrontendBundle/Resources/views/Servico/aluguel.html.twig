@@ -1,0 +1,53 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'servico' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a alt="Homepage Intrix" href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                        <li><a alt="Serviços Intrix" href="{{path('intrix_frontend_servico')}}">Serviço</a> <span class="divider">/</span></li>
+                        <li class="active">Aluguel de sites</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Aluguel de sites</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="span3">
+                {% include 'IntrixFrontendBundle:Servico:_leftbar.html.twig' with {'aluguel' : ''} %}
+            </div>
+            <div class="span9">
+                <h2>Descubra como ter um site sem gastar muito.</h2>
+                <img class="responsive appear-animation pull-left" src="{{ asset('bundles/intrixfrontend/img/intrix.png')}}" data-appear-animation="fadeInUpBig">
+                <p>
+                    Como empresa sabemos o quão importante é estar na internet, mas as vezes não podemos investir na compra de um site. Pensando nisso a <strong>Intrix</strong>
+                    criou esse serviço, o aluguel de site, nele você pode ter um site de alto nível sem gastar muito.
+                </p>
+                <p>
+                    Nesse serviço já disponibilizamos gratuitamente a <a alt="Hospedagem de sites" href="{{path('intrix_frontend_servico_hospedagem')}}">hospedagem</a> para todos os planos.
+                    Assim você economiza ainda mais utilizando esse serviço que a <strong>Intrix</strong> oferece.
+                </p>
+                <p>
+                    <strong>Conheça os nossos preços relacionados a aluguel de site.</strong>
+                </p>
+                <p>
+                    <a alt="Preços Aluguel de site" href="{{path('intrix_frontend_valor_aluguel')}}" class="btn btn-large btn-primary">Confira os valores</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+{%endblock%}

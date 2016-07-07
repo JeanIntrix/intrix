@@ -1,0 +1,44 @@
+<aside class="sidebar">
+
+    <h4>Serviços</h4>
+    <ul class="nav nav-list primary pull-bottom">
+        {% if not site is defined %}
+            <li><a alt="Desenvolvimento de site" href="{{path('intrix_frontend_servico_site')}}">Sites</a></li>
+        {%endif%}
+
+        {% if not sistema is defined %}
+            <li><a alt="Desenvolvimento de sitemas" href="{{path('intrix_frontend_servico_sistema')}}">Sistemas</a></li>
+        {%endif%}
+
+        {% if not aluguel is defined %}
+            <li><a alt="Aluguel de site" href="{{path('intrix_frontend_servico_aluguel')}}">Aluguel de site</a></li>
+        {%endif%}
+
+        {% if not manutencao is defined %}
+            <li><a alt="Manutenção de site" href="{{path('intrix_frontend_servico_manutencao')}}">Manutenção em sites/sistemas</a></li>
+        {%endif%}
+
+        {% if not hospedagem is defined %}
+            <li><a alt="Hospedagem de site" href="{{path('intrix_frontend_servico_hospedagem')}}">Hospedagem</a></li>
+        {%endif%}
+
+        {% if not loja is defined %}
+            <li><a alt="Desenvolvimento de Loja online/virtual" href="{{path('intrix_frontend_servico_loja')}}">Loja Online</a></li>
+        {%endif%}
+
+        {% if not seo is defined %}
+            <li><a alt="Ferramentas de SEO" href="{{path('intrix_frontend_servico_seo')}}">SEO</a></li>
+        {%endif%}
+
+    </ul>
+
+    <hr />
+
+    <h4>Intrix</h4>
+    <p>
+        A <strong>Intrix</strong> busca trabalhar em conjunto com seus clientes tendo em vista o reconhecimento do seu negócio no mundo virtual. Independentemente
+        da necessidade a <strong>Intrix</strong> é qualificada para atendê-lo de forma dedicada e eficiente, contando com profissionais com mais de 7 anos de experiência,
+        dessa forma conseguimos alcançar o resultado esperado em nossos trabalhos.
+    </p>
+
+</aside>

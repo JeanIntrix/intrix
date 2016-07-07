@@ -1,0 +1,54 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'servico' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a alt="Homepage Intrix" href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                        <li><a alt="Serviços Intrix" href="{{path('intrix_frontend_servico')}}">Serviço</a> <span class="divider">/</span></li>
+                        <li class="active">SEO</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>SEO</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="span3">
+                {% include 'IntrixFrontendBundle:Servico:_leftbar.html.twig' with {'seo' : ''} %}
+            </div>
+            <div class="span9">
+                <h2>Entenda a importância do SEO</h2>
+                <img class="responsive appear-animation pull-left" src="{{ asset('bundles/intrixfrontend/img/intrix.png')}}" data-appear-animation="fadeInUpBig">
+                <p>
+                    SEO (Search Engine Optimation), em português também conhecido como Otimizador de Sites, MOB ou Otimizador de Pesquisa que, nada mais é, do que
+                    um conjunto de técnicas que visam melhorar o posicionamento de páginas em sites de busca.
+                </p>
+                <p>
+                    O SEO tem como principal objetivo, destacar uma página na internet e fazer com que esta apareça entre os primeiros resultados de busca ao
+                    ser digitada uma palavra-chave. Por isso, é tão importante utilizar este método ao desenvolver um site, pois garantindo maior visibilidade,
+                    consequentemente aumentará a venda de produtos e/ou serviços oferecidos pelo site e o tornará um negócio de maior destaque e sucesso.
+                </p>
+                <p>
+                    Confie na <strong>Intrix</strong> para ajudar a alcançar os melhores resultados que sua empresa precisa.
+                </p>
+                <p>
+                    <a alt="Preços Desenvolvimento de site" href="{{path('intrix_frontend_valor_site')}}" class="btn btn-large btn-primary">Solicite o seu orçamento</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+{%endblock%}

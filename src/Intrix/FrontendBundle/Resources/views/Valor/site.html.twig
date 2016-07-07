@@ -1,0 +1,105 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'valor' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a alt="Homepage Intrix" href="{{path('intrix_frontend_homepage')}}">Home</a> <span class="divider">/</span></li>
+                        <li><a alt="Valores Intrix" href="{{path('intrix_frontend_valor')}}">Valores</a> <span class="divider">/</span></li>
+                        <li class="active">Sites</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Sites</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2><strong>Intrix</strong> a melhor opção.</h2>
+
+        <div class="row">
+            <div class="span12">
+                <p class="lead">
+                    Contamos com diversas opções para atender de forma completa a sua necessidade. Confira abaixo e escolha a opção que atende melhor o seu negócio.
+                </p>
+            </div>
+        </div>
+
+        <hr class="tall" />
+
+        <h3 class="short">Escolha o melhor <strong>plano</strong> para você.</h3>
+        <p>Disponibilizamos 4 planos para melhor lhe atender.</p>
+
+        <div class="row">
+
+            <div class="pricing-table">
+                <div class="span3">
+                    <div class="plan">
+                        <h3>Simples<span>R$ 900,00</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>Design Responsivo<br /><a href="">Detalhes</a></li>
+                            <li>Escolha entre 3 layouts definidos</li>
+                            <li>Integração com redes sociais</li>
+                            <li>Até 4 páginas</li>
+                            <li>7 dias de manutenção<br /><a href="">Detalhes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span3 center">
+                    <div class="plan">
+                        
+                        <h3>Básico<span>R$ 1.200,00</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>Design Responsivo<br /><a href="">Detalhes</a></li>
+                            <li>Escolha entre 3 layouts customizados</li>
+                            <li>Integração com redes sociais</li>
+                            <li>Até 6 páginas</li>
+                            <li>15 dias de manutenção<br /><a href="">Detalhes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="plan most-popular">
+                        <div class="plan-ribbon-wrapper"><div class="plan-ribbon">Econômico</div></div>
+                        <h3>Ideal<span>R$ 1.500,00</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>Design Responsivo<br /><a href="">Detalhes</a></li>
+                            <li>Escolha entre 3 layouts customizados</li>
+                            <li>Integração com redes sociais</li>
+                            <li>Até 8 páginas</li>
+                            <li>30 dias de manutenção<br /><a href="">Detalhes</a></li>
+                            <li>Painel de controle<br /><a href="">Detalhes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span3">
+                    <div class="plan">
+                        <h3>Master<span>R$ 2.200,00</span></h3>
+                        <a class="btn btn-large btn-primary" href="#">Contratar</a>
+                        <ul>
+                            <li>Design Responsivo<br /><a href="">Detalhes</a></li>
+                            <li>Layout feito sob medida</li>
+                            <li>Integração com redes sociais</li>
+                            <li>Páginas Ilimitadas</li>
+                            <li>30 dias de manutenção<br /><a href="">Detalhes</a></li>
+                            <li>Painel de controle<br /><a href="">Detalhes</a></li>
+                            <li>Remover e adicionar novas páginas<br /><a href="">Detalhes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{%endblock%}

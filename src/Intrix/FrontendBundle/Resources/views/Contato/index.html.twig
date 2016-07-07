@@ -1,0 +1,100 @@
+{% extends 'IntrixFrontendBundle:Layout:layout.html.twig' %}
+{% block menu %}
+    {% include 'IntrixFrontendBundle:Layout:_menu.html.twig' with {'contato' : ''} %}
+{%endblock%}
+{% block body %}
+    <section class="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+                        <li class="active">Contato</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Contato</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps -->
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="span6">
+
+                <div class="alert alert-success hidden" id="contactSuccess">
+                    <strong>Success!</strong> Your message has been sent to us.
+                </div>
+
+                <div class="alert alert-error hidden" id="contactError">
+                    <strong>Error!</strong> There was an error sending your message.
+                </div>
+
+                <h2 class="short">Entre em contato com a <strong>Intrix</strong></h2>
+                <form action="{{ path('intrix_frontend_contato') }}" method="post" id="contactForm" type="post">
+                    <div class="row controls">
+                        <div class="span3 control-group">
+                            <label>Seu nome *</label>
+                            {{form_widget(form.nome)}}
+                        </div>
+                        <div class="span3 control-group">
+                            <label>Seu e-mail *</label>
+                            {{form_widget(form.email)}}
+                        </div>
+                    </div>
+                    <div class="row controls">
+                        <div class="span6 control-group">
+                            <label>Assunto</label>
+                            {{form_widget(form.assunto)}}
+                        </div>
+                    </div>
+                    <div class="row controls">
+                        <div class="span6 control-group">
+                            <label>Mensagem *</label>
+                            {{form_widget(form.mensagem)}}
+                        </div>
+                    </div>
+                    <div class="btn-toolbar">
+                        {{form_row(form._token)}}
+                        {{form_widget(form.save)}}
+                    </div>
+                </form>
+            </div>
+            <div class="span6">
+
+                <h4 class="pull-top">Fale <strong>conosco</strong></h4>
+                <p>
+                    A <strong>Intrix</strong> está sempre disponível para atender da maneira mais eficiente a sua necessidade, entre em contato conosco e confira
+                    a qualidade dos serviços e o atendimento único.
+                </p>
+
+                <hr />
+
+                <h4>Contato</h4>
+                <ul class="unstyled">
+                    <li><i class="icon-phone"></i> <strong>Telefone:</strong> (41) 3048-1370</li>
+                    <li><i class="icon-envelope"></i> <strong>E-mail:</strong> <a href="mailto:contato@intrix.com.br">contato@intrix.com.br</a></li>
+                </ul>
+
+                <hr />
+
+                <h4>Horário <strong>Comercial</strong></h4>
+                <ul class="unstyled">
+                    <li><i class="icon-time"></i> De segunda a sexta-feira 09:00 ás 17:00</li>
+                    <li><i class="icon-time"></i> Sabados - 09:00 ás 13:00</li>
+                    <li><i class="icon-time"></i> Domingos - Fechado</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+{%endblock%}
