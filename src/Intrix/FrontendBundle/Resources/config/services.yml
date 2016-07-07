@@ -1,0 +1,4 @@
+services:
+#    intrix_frontend.example:
+#        class: Intrix\FrontendBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

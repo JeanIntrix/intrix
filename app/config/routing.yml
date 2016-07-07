@@ -1,3 +1,4 @@
-app:
-    resource: "@AppBundle/Controller/"
+intrix_frontend:
+    resource: "@IntrixFrontendBundle/Controller/"
     type:     annotation
+    prefix:   /
